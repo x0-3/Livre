@@ -8,7 +8,7 @@ class Livre{
     private $prix;
     private Auteur $auteur;
 
-    public function __construct($titre, $parution, $nbPage, $prix, Auteur $acteur){
+    public function __construct($titre, $parution, $nbPage, $prix, Auteur $auteur){
         $this->titre=$titre;
         $this->parution=$parution;
         $this->nbPage=$nbPage;
@@ -31,6 +31,12 @@ class Livre{
     }
 
     //toString()
+
+    public function __toString()
+    {
+        return "{$this->getTitre()} {$this->getParution()} : {$this->getNbPage()} pages / {$this->getPrix()} € <br>";
+    }
+
 
 }
 
