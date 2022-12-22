@@ -15,6 +15,7 @@ class Livre{
         $this->prix=$prix;
         $this->auteur = $auteur;
         $auteur->addLivres($this);
+        // $auteur->addPrix($this);
     }
 
     //get functions 
