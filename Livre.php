@@ -13,8 +13,8 @@ class Livre{
         $this->parution=$parution;
         $this->nbPage=$nbPage;
         $this->prix=$prix;
-        // $this->auteur = $auteur;
-        // $auteur->addLivres($this);
+        $this->auteur = $auteur;
+        $auteur->addLivres($this);
     }
 
     function getTitre(){

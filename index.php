@@ -8,11 +8,8 @@ include 'Livre.php';
 //class Auteur
 $auteur1= new auteur ("Stephen" ,"King");
 
-echo $auteur1->__toString();
-
-
-echo "<br>";
-
+echo $auteur1. "<br>";
+echo $auteur1-> afficherBibliographie();
 
 //class Livre
 
