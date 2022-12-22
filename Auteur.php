@@ -20,7 +20,7 @@ class Auteur{
 
     public function __toString()
     {
-        return "Livres de {$this->prenom} {$this->nom} <br>";
+        return '<span style="font-size: 25px;">'. "<b>Livres de {$this->prenom} {$this->nom} </b></span><br>";
     }
 
 
