@@ -17,6 +17,7 @@ class Livre{
         $auteur->addLivres($this);
     }
 
+    //get functions 
     function getTitre(){
         return $this->titre;
     }
@@ -31,12 +32,10 @@ class Livre{
     }
 
     //toString()
-
     public function __toString()
     {
         return "{$this->getTitre()} {$this->getParution()} : {$this->getNbPage()} pages / {$this->getPrix()} € <br>";
     }
-
 
 }
 

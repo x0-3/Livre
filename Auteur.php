@@ -21,8 +21,11 @@ class Auteur{
     public function addLivres(Livre $livre){
         $this->bibliographie[]=$livre;
     }
-    public function afficherBibliographie(){
 
+    public function afficherBibliographie(){
+        foreach($this->bibliographie as $value){
+            echo $value;
+        }
     }
 
     public function __toString()
