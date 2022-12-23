@@ -15,25 +15,24 @@ class Livre{
         $this->prix=$prix;
         $this->auteur = $auteur;
         $auteur->addLivres($this);
-        // $auteur->addPrix($this);
     }
 
     //get functions 
-    function getTitre(){
+    public function getTitre(){
         return $this->titre;
     }
-    function getParution(){
+    public function getParution(){
         return $this->parution;
     }
-    function getNbPage(){
+    public function getNbPage(){
         return $this->nbPage;
     }
-    function getPrix(){
+    public function getPrix(){
         return $this->prix;
     }
 
 
-    //toString()
+    //toString() titre, date de parution, nombre de page et le prix
     public function __toString()
     {
         return "{$this->getTitre()} {$this->getParution()} : {$this->getNbPage()} pages / {$this->getPrix()} € <br>";
