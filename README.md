@@ -1,4 +1,4 @@
-# Livre_exo
+# Livre
 
 Projet PHP POO permettant de gérer des livres et leurs auteurs.  
   
